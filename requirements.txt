@@ -1,0 +1,4 @@
+uproot
+hist[plot]
+pandas
+awkward
