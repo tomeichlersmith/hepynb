@@ -90,8 +90,8 @@ jobs:
       if: ${{contains(steps.generate_tag.outputs.retag,'noop')}}
       uses: docker/build-push-action@v3
       with:
-        context: context
-        file: context/Dockerfile
+        context: .
+        file: Dockerfile
         push: true 
         cache-from: type=local,src=/tmp/.buildx-cache
         cache-to: type=local,dest=/tmp/.buildx-cache
