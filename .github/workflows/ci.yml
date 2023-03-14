@@ -54,7 +54,6 @@ jobs:
       uses: actions/checkout@v3
     -
       name: Build the Image
-      if: ${{contains(steps.generate_tag.outputs.retag,'noop')}}
       uses: docker/build-push-action@v3
       with:
         context: .
