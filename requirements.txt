@@ -1,4 +1,2 @@
-uproot
-hist[plot]
+scikit-hep~=5.0.0
 pandas
-awkward
