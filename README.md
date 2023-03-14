@@ -45,3 +45,6 @@ apptainer run \
   --bind ${TMPDIR:-/tmp/} \
   hepynb.sif
 ```
+
+## Packages
+This is a very thin layer on top of the [jupyter/scipy-notebook](https://jupyter-docker-stacks.readthedocs.io/en/latest/using/selecting.html#jupyter-scipy-notebook) (documentation with packages included linked) that simply installs the [`scikit-hep` metapackage](https://github.com/scikit-hep/scikit-hep/). Just to list common packages that you may already use that are included: pandas, awkward, matplotlib, mplhep, hist, pylhe, h5py, scipy, sympy (and others - inspect links for details or give the notebook a try).
