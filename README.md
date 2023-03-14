@@ -25,13 +25,13 @@ docker run \
   --rm -it \
   -p 8888:8888 \
   -v $(pwd -P):/home/jovyan \
-  tomeichlersmith/hepynb:edge
+  ghcr.io/tomeichlersmith/hepynb
 ```
 
 ### singularity or apptainer
 Build the image from DockerHub into a local SIF image file.
 ```
-apptainer build hepynb.sif docker://tomeichlersmith/hepynb:edge
+apptainer build hepynb.sif docker://ghcr.io/tomeichlersmith/hepynb
 ```
 **Note**: You may want to change `APPTAINER_CACHEDIR` so that
 apptainer doesn't fill up your home directory with layers.
