@@ -31,7 +31,7 @@ docker run \
 ### singularity or apptainer
 Build the image from DockerHub into a local SIF image file.
 ```
-apptainer build hepynb.sif docker://ghcr.io/tomeichlersmith/jupyter-scikit-hep
+apptainer build jupyter-scikit-hep.sif docker://ghcr.io/tomeichlersmith/jupyter-scikit-hep
 ```
 **Note**: You may want to change `APPTAINER_CACHEDIR` so that
 apptainer doesn't fill up your home directory with layers.
