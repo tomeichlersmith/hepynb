@@ -1,4 +1,4 @@
-# hepynb
+# jupyter-scikit-hep
 
 Use a more recent version of Python with JupyterLab and other HEP-focused Python analysis tools.
 
@@ -25,13 +25,13 @@ docker run \
   --rm -it \
   -p 8888:8888 \
   -v $(pwd -P):/home/jovyan \
-  ghcr.io/tomeichlersmith/hepynb
+  ghcr.io/tomeichlersmith/jupyter-scikit-hep
 ```
 
 ### singularity or apptainer
 Build the image from DockerHub into a local SIF image file.
 ```
-apptainer build hepynb.sif docker://ghcr.io/tomeichlersmith/hepynb
+apptainer build hepynb.sif docker://ghcr.io/tomeichlersmith/jupyter-scikit-hep
 ```
 **Note**: You may want to change `APPTAINER_CACHEDIR` so that
 apptainer doesn't fill up your home directory with layers.
@@ -43,7 +43,7 @@ working directory as the home directory of the JupyterLab user
 apptainer run \
   --bind $(pwd -P):/home/jovyan \
   --bind ${TMPDIR:-/tmp/} \
-  hepynb.sif
+  jupyter-scikit-hep.sif
 ```
 
 ## Packages
