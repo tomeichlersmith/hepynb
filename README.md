@@ -48,3 +48,6 @@ apptainer run \
 
 ## Packages
 This is a very thin layer on top of the [jupyter/scipy-notebook](https://jupyter-docker-stacks.readthedocs.io/en/latest/using/selecting.html#jupyter-scipy-notebook) (documentation with packages included linked) that simply installs the [`scikit-hep` metapackage](https://github.com/scikit-hep/scikit-hep/). Just to list common packages that you may already use that are included: pandas, awkward, matplotlib, mplhep, hist, pylhe, h5py, scipy, sympy (and others - inspect links for details or give the notebook a try).
+
+## Versions
+Since this jupyter docker stack is only adding the scikit-hep metapackage, it's versions are meant to align with that package. For example, v5.0.0 of this image contains v5.0.0 of scikit-hep. The exception to this is the early v0 beta versions. If you wish there to be a specific version of the scikit-hep metapackage, I can quite easily build an image for that version - simply open an issue requesting the version number to be used.
