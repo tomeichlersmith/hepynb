@@ -1,1 +1,1 @@
-scikit-hep==5.0.0
+scikit-hep==5.1.1
