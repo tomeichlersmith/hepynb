@@ -1,5 +1,5 @@
 # Start from a core stack version
-FROM jupyter/scipy-notebook:2023-04-27
+FROM jupyter/scipy-notebook:2023-05-08
 # Install from the requirements.txt file
 COPY --chown=${NB_UID}:${NB_GID} requirements.txt /tmp/
 RUN pip install --no-cache-dir --requirement /tmp/requirements.txt && \
