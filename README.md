@@ -43,6 +43,9 @@ working directory as the home directory of the JupyterLab user
 apptainer run \
   --bind $(pwd -P):/home/jovyan \
   --bind ${TMPDIR:-/tmp/} \
+  --home $(pwd -P) \
+  --hostname jupyter-scikit-hep.$(uname -n) \
+  --env "PS1=${PS1}" \
   jupyter-scikit-hep.sif
 ```
 
