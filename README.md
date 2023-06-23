@@ -62,4 +62,4 @@ Additionally, if you feel like this package would be helpful for the wider commu
 feel free to open an issue in this repository to include it (or see if it can be included in the scikit-hep metapackage).
 
 ## Versions
-Since this jupyter docker stack is only adding the scikit-hep metapackage, it's versions are meant to align with that package. For example, v5.0.0 of this image contains v5.0.0 of scikit-hep. The exception to this is the early v0 beta versions. If you wish there to be a specific version of the scikit-hep metapackage, I can quite easily build an image for that version - simply open an issue requesting the version number to be used.
+Following [CalVer](calver.org) with just the date as the format. Check the release notes for a specific tag to learn why that release was made and what packages are included.
