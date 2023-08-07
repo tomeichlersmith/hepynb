@@ -1,2 +1,2 @@
-scikit-hep==2023.7.1
+scikit-hep==2023.8.1
 coffea @ git+https://github.com/CoffeaTeam/coffea@v2023.6.0.rc0
