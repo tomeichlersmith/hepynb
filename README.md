@@ -1,3 +1,19 @@
+# Archived
+I've chosen to archive this project since my other project [denv](github.com/tomeichlersmith/denv) can achieve the goals of this project
+in a cleaner fashion.
+
+Use the latest Python3 container image and install the most recent versions of jupyterlab and scikit-hep to get
+the dependencies I want.
+```
+denv init python:3
+denv python3 -m pip install --user --upgrade jupyterlab scikit-hep
+denv jupyter lab
+```
+_Note_: One could also use python's virtual environments within the denv in order to use different versions
+of packages with the same base python version.
+
+---
+
 # jupyter-scikit-hep
 
 Use a more recent version of Python with JupyterLab and other HEP-focused Python analysis tools.
